@@ -4,7 +4,7 @@ using ObjCRuntime;
 namespace GoogleAnalytics.iOS
 {
 	[Native]
-	public enum GAILogLevel : nuint
+	public enum GAILogLevel : ulong
 	{
 		None = 0,
 		Error = 1,
@@ -14,7 +14,7 @@ namespace GoogleAnalytics.iOS
 	}
 
 	[Native]
-	public enum GAIDispatchResult : nuint
+	public enum GAIDispatchResult : ulong
 	{
 		NoData,
 		Good,

@@ -80,8 +80,8 @@ namespace GoogleAnalytics.iOS
 		void Send (NSDictionary parameters);
 	}
 
-	[Static]
-	[Verify (ConstantsInterfaceAssociation)]
+	//[Static]
+	//[Verify (ConstantsInterfaceAssociation)]
 	partial interface Constants
 	{
 		// extern NSString *const kGAIProduct;
@@ -128,7 +128,7 @@ namespace GoogleAnalytics.iOS
 		// +(GAI *)sharedInstance;
 		[Static]
 		[Export ("sharedInstance")]
-		[Verify (MethodToProperty)]
+		//[Verify (MethodToProperty)]
 		GAI SharedInstance { get; }
 
 		// -(id<GAITracker>)trackerWithName:(NSString *)name trackingId:(NSString *)trackingId;
@@ -259,7 +259,7 @@ namespace GoogleAnalytics.iOS
 
 		// -(NSDictionary *)build;
 		[Export ("build")]
-		[Verify (MethodToProperty)]
+		//[Verify (MethodToProperty)]
 		NSDictionary Build { get; }
 	}
 
@@ -306,7 +306,7 @@ namespace GoogleAnalytics.iOS
 
 		// -(NSMutableDictionary *)build;
 		[Export ("build")]
-		[Verify (MethodToProperty)]
+		//[Verify (MethodToProperty)]
 		NSMutableDictionary Build { get; }
 
 		// -(GAIDictionaryBuilder *)setCampaignParametersFromUrl:(NSString *)urlString;
@@ -316,13 +316,13 @@ namespace GoogleAnalytics.iOS
 		// +(GAIDictionaryBuilder *)createAppView __attribute__((deprecated("Use createScreenView instead.")));
 		[Static]
 		[Export ("createAppView")]
-		[Verify (MethodToProperty)]
+		//[Verify (MethodToProperty)]
 		GAIDictionaryBuilder CreateAppView { get; }
 
 		// +(GAIDictionaryBuilder *)createScreenView;
 		[Static]
 		[Export ("createScreenView")]
-		[Verify (MethodToProperty)]
+		//[Verify (MethodToProperty)]
 		GAIDictionaryBuilder CreateScreenView { get; }
 
 		// +(GAIDictionaryBuilder *)createEventWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label value:(NSNumber *)value;
@@ -372,8 +372,8 @@ namespace GoogleAnalytics.iOS
 		GAIDictionaryBuilder AddPromotion (GAIEcommercePromotion promotion);
 	}
 
-	[Static]
-	[Verify (ConstantsInterfaceAssociation)]
+	//[Static]
+	//[Verify (ConstantsInterfaceAssociation)]
 	partial interface Constants
 	{
 		// extern NSString *const kGAIProductId;
@@ -583,7 +583,7 @@ namespace GoogleAnalytics.iOS
 	}
 
 	[Static]
-	[Verify (ConstantsInterfaceAssociation)]
+	//[Verify (ConstantsInterfaceAssociation)]
 	partial interface Constants
 	{
 		// extern NSString *const kGAIUseSecure;
