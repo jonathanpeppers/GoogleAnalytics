@@ -48,6 +48,8 @@
     <NativeReference Include="GoogleAnalyticsServicesiOS_3.17\libGoogleAnalyticsServices.a">
       <Kind>Static</Kind>
       <SmartLink>False</SmartLink>
+      <LinkerFlags>-lsqlite3</LinkerFlags>
+      <Frameworks>CoreData SystemConfiguration</Frameworks>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
